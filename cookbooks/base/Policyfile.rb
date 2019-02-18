@@ -17,6 +17,4 @@ cookbook 'base', path: '.'
 cookbook 'hardening', path: '../hardening'
 
 # Policyfile defined attributes
-default['base'] = {
-    message: "This node was hardened by Chef. Policyfile created at #{Time.now.utc}"
-}
+default['base']['message'] = "This node was hardened by Chef. Policyfile created at #{Time.now.utc}"
