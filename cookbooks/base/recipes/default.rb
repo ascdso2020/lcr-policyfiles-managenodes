@@ -9,4 +9,3 @@ include_recipe 'hardening::default'
 file '/etc/motd' do
   content node['base']['message']
 end
-
